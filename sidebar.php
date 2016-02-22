@@ -1,9 +1,5 @@
 <aside class="col-lg-4 col-md-12 right-bar">
     <?php dynamic_sidebar('right_bar'); ?>
-    <div class="widget-cat search">
-        <h5 class="text-uppercase aside-head">search.</h5>
-        <label><input type="search" placeholder="What are you looking for?"></label>
-    </div>
     <div class="widget-cat subscribe">
         <h5 class="text-uppercase aside-head">stay tuned.</h5>
         <form action="#" class="form-search">
