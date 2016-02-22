@@ -1,0 +1,157 @@
+@import url('bower_components/bootstrap/dist/css/bootstrap.min.css');
+@import url('bower_components/flexboxgrid/dist/flexboxgrid.min.css');
+@import url('bower_components/font-awesome/css/font-awesome.min.css');
+@import 'nib'
+@require 'mixin'
+@require '__variables'
+@require 'reset'
+
+//header
+.prime-header
+  background $col-blackhead
+  box-shadow inset 0 -6px 0 $col-darkbox-shadow
+  height 130px
+  position relative
+  z-index 20
+  .navbar-toggle
+    border-color $col-white
+    > .icon-bar
+      background $col-green
+  .navbar-header
+    padding 40px 0
+    @media (max-width: 768px)
+      padding-left 40px
+    & + nav.navbar-collapse
+      li
+        background $col-blackhead
+        > a
+          min-width 132px
+          padding 0
+          font 700 16px $font-lato
+          color $col-white
+          border-right 1px solid $col-darkbox-shadow
+          box-shadow inset 0 -6px 0 $col-darkbox-shadow
+          text-shadow 0 1px 0 $col-darkbox-shadow
+          &:hover
+            color $col-green
+            box-shadow inset 0 -6px 0 $col-green
+          @media (min-width: 768px)
+            line-height 130px
+          @media (max-width: 768px)
+            line-height 50px
+            border none
+        &:first-of-type>a
+          border-left 1px solid $col-darkbox-shadow
+          @media (max-width: 768px)
+            border none
+      > ul.nav.navbar-nav
+        margin-right -30px
+        @media (max-width: 768px)
+          margin auto
+//main
+.blog-inner-main
+  > .container
+    border-right 1px solid $col-bordergray
+    border-left 1px solid $col-bordergray
+    padding 0
+    padding-top 80px
+    & > *
+      padding 0
+  .blog-content
+    padding-right 45px
+  .post
+    max-width 620px
+    margin-bottom 60px
+  .article-head
+    display inline-block
+    padding 20px
+    font 700 28px/30px $font-lato
+    color $col-articlehead
+  .article-desc, .widget-cat p
+    padding 15px 20px
+    font 400 16px/20px $font-lato
+    & > p:not(:last-of-type)
+      margin-bottom 20px
+  .btn-gray
+    font 700 16px/20px $font-lato
+    color $col-graytbtn
+    background $col-white
+    padding 10px 25px
+    min-width 186px
+    border 2px solid $col-graytbtn
+    border-radius 30px
+    margin 20px
+    &:hover
+      border-color $col-green
+      color $col-green
+  .nav-links
+    margin 0
+    border-top 1px solid $col-bordergray
+    a
+      font 700 18px $font-lato
+      color $col-navlinks
+      > span
+        font-weight 400
+        margin 0 10px 0
+      &:hover
+        color $col-green
+    .before-link,.after-link
+      margin 30px
+  .right-bar
+    .aside-head
+      box-shadow inset 3px 0 0 $col-green
+      padding 20px 25px
+      font 700 16px $font-lato
+      color $col-articledesc
+      background $col-rightbarbg
+    label
+      width 100%
+    input
+      margin-top 20px
+      width calc(100% + 2px)
+      height 50px
+      padding 20px
+      border 1px solid $col-bordergray
+      font 400 12px/20px $font-lato
+      color $col-articledesc
+    .widget-cat
+      margin-bottom 80px
+    form.form-search
+      position relative
+      > button
+        -webkit-appearance none
+        border: none
+        background none
+        position absolute
+        right 20px
+        top 35px
+        > span
+          width 24px
+          height 24px
+          font-size 24px
+          font-weight 400
+          color $col-bordergray
+//footer
+.prime-footer
+  padding 80px 0
+  background $col-rightbarbg
+  border-top 1px solid $col-bordergray
+  address
+    font 13px/20px $font-lato
+    color $col-address
+    margin 32px 0 38px
+    > strong
+      color $col-addressstrong
+  .soc-links
+    >li
+      width 40px
+      height 40px
+      background $col-bordergray
+      margin-right 30px
+      &:last-of-type
+        margin none
+      &:hover
+        background $col-social
+      a
+        color $col-white
+//------
