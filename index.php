@@ -22,10 +22,8 @@
         </div>
         <?php get_template_part("sidebar"); ?>
         <nav class="nav-links col-xs-12 row between-xs">
-            <div class="before-link"><a href="#" class="text-uppercase"><span class="fa fa-long-arrow-left"></span>previous</a>
-            </div>
-            <div class="after-link"><a href="#" class="text-uppercase">next<span class="fa fa-long-arrow-right"></span></a>
-            </div>
+            <div class="before-link"><?php previous_posts_link('<span class="fa fa-long-arrow-left"></span>previous'); ?></div>
+            <div class="after-link"><?php next_posts_link('next<span class="fa fa-long-arrow-right"></span>'); ?></div>
         </nav>
     </div>
 </section>
